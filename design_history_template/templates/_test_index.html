@@ -1,0 +1,16 @@
+{% set page_title = "Test index" %}
+{% extends "_base.html" %}
+
+{% block endhead %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nhsuk-5.1.0.min.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <h1>Dummy index page</h1>
+    </div>
+  </div>
+</div>
+{% endblock %}
