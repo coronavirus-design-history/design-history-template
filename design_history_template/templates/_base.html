@@ -31,12 +31,14 @@
           </a>
         </div>
       </div>
+      {% block top %}
+      {% endblock %}
     </header>
-      <main id="maincontent" role="main">
-        {% block hero %}
-        {% endblock %}
-        {% block content %}
-        {% endblock %}
+    <main id="maincontent" role="main"{% if config.add_wrapper %} class="nhsuk-main-wrapper"{% endif %}>
+      {% block hero %}
+      {% endblock %}
+      {% block content %}
+      {% endblock %}
     </main>
     <footer role="contentinfo">
       <div class="nhsuk-footer" id="nhsuk-footer">
